@@ -9,4 +9,14 @@ void AppleTree::grow() {
 			apples.push_back(Apple());
 		}
 	}
+
+  void AppleTree::shake() {
+	   shake(rand() % apples.size());
+  }
+	
+  void AppleTree::shake(int appleCount) {
+	  for (int i = 0; i < appleCount; i++) {
+	     apples.pop_back();
+	  }
+  }
  

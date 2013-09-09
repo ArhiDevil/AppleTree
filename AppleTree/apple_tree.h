@@ -17,6 +17,10 @@ public:
   void grow();
 	
   void grow(int appleCount);
+
+  void shake();
+	
+  void shake(int appleCount);
  
 };
 
